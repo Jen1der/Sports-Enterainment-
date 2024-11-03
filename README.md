@@ -13,15 +13,9 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 - [Acknowledgments](#acknowledgments)
 
 
-Watch a video demonstration of the project in action:
+Watch videos of Super Bowl entertainment through the years in action:
 
-[![Watch the demo on YouTube]([https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://youtu.be/HVx_s90cSUM?si=FWlLkUhJbgAtWlVV))
-
-Replace `YOUR_VIDEO_ID` with the actual video ID from your YouTube link (e.g., for `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the ID is `dQw4w9WgXcQ`).
-
-Alternatively, you can simply link the video like this:
-
-- [Watch the demo on YouTube](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+- [Watch the Super Bowl Halftime performances through the years YouTube](https://youtu.be/HVx_s90cSUM?si=czh2Z88nTCOgMfvl)
 
 ## Installation
 
