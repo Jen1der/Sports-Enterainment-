@@ -15,7 +15,7 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 
 Watch a video demonstration of the project in action:
 
-[![Watch the demo on YouTube](https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch the demo on YouTube]([https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://youtu.be/HVx_s90cSUM?si=FWlLkUhJbgAtWlVV))
 
 Replace `YOUR_VIDEO_ID` with the actual video ID from your YouTube link (e.g., for `https://www.youtube.com/watch?v=dQw4w9WgXcQ`, the ID is `dQw4w9WgXcQ`).
 
