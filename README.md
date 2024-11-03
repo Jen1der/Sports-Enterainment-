@@ -1,7 +1,6 @@
-# Sports-Enterainment
-This is my respitory on sports entertainment. I will be compiling ways AI access can help with gameday entertainement and fan engagement. 
-I will be using Claude, Udio, and Ideogram for different aspects of sports entertainment as well showing my skills in creating my own.
-# Project Title
+# Super-Bowl-Enterainment-Evolution
+This is my respitory on sports entertainment. I will be compiling ways AI access can help with Super Bowl gameday entertainement and fan engagement. 
+I will be using Claude, ChatGPT, Archives, Youtube for different aspects of sports entertainment as well showing my skills in creating my vision with AI to show the evolution of the Super Bowl.
 
 ## Table of Contents
 
