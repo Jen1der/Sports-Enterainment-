@@ -15,9 +15,13 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 ## Documents 
 
 - [The Evolution of Super Bowl: From Humble Beginnings to Global Spectacle](The Evolution of the Super Bowl- From Humble Beginnings to Global Stage.docx)
-- []()
-- []()
-- []()
+- [The Dallas Cowboys Cheerleaders: Redefining NFL Sideline Entertainment]()
+- [The Influential Legacy of the Dallas Cowboys Cheerleaders: Beyond the Sidelines]()
+- [What is some of the most memorable Super Bowl broadcasts?]()
+- [The Evolution of Super Bowl Halftime Shows: From Marching Bands to Mega-Spectacles](superbowl-halftime-essay)
+- [Defining Moments: The Super Bowl Halftime Shows That Changed Entertainment History](superbowl-performances)
+- [Super Bowl Sunday: The Making of an American Cultural Phenomenon](superbowl-traditions)
+- [Through the Generations: The Super Bowl Experience Across Time](superbowl-generations 2)
 
 Watch videos of Super Bowl entertainment through the years in action:
 
