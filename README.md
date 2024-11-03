@@ -14,7 +14,7 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 
 ## Documents 
 
-- []()
+- [The Evolution of Super Bowl: From Humble Beginnings to Global Spectacle](The Evolution of Super Bowl: From Humble Beginnings to Global Spectacle)
 - []()
 - []()
 - []()
@@ -22,6 +22,9 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 Watch videos of Super Bowl entertainment through the years in action:
 
 - [Watch the Super Bowl Halftime performances through the years YouTube](https://youtu.be/HVx_s90cSUM?si=czh2Z88nTCOgMfvl)
+
+This is where a lot of Super Bowl knowledge will be found
+- [Check out the Internet Archives for the Super Bowl](https://archive.org/search?query=Super+Bowl)
 
 ## Installation
 
