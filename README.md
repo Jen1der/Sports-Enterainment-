@@ -22,6 +22,7 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 - [Defining Moments: The Super Bowl Halftime Shows That Changed Entertainment History](superbowl-performances)
 - [Super Bowl Sunday: The Making of an American Cultural Phenomenon](superbowl-traditions)
 - [Through the Generations: The Super Bowl Experience Across Time](superbowl-generations 2)
+- [traditions](Super-bowl-traditions)
 
 Watch videos of Super Bowl entertainment through the years in action:
 
