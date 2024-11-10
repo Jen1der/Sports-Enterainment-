@@ -31,6 +31,8 @@ Watch videos of Super Bowl entertainment through the years in action:
 This is where a lot of Super Bowl knowledge will be found
 - [Check out the Internet Archives for the Super Bowl](https://archive.org/search?query=Super+Bowl)
 
+- ![image of AI Halftime](https://github.com/jen1der/sports-entertainment/blob/main/a-photo-of-the-super-bowl-halftime-show-from-the-p-lg598xzuRd2fIqRGkd5img-frDu6_KoT92bUJ7fCks39g.jpeg?raw=true)
+
 ## Installation
 
 Instructions on how to install the project:
