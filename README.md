@@ -11,6 +11,18 @@ I will be using Claude, ChatGPT, Archives, Youtube for different aspects of spor
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
+---
+
+## View the Index Page
+
+You can access the main index page here:
+
+- [Index Page (index.html)](index.html) – Local file in this repository.
+
+
+---
+
+Feel free to explore and contribute!
 
 ## Documents 
 
