@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ultimate Super Bowl Experience</title>
+  <link rel="stylesheet" href="../css/styles.css"> <!-- Assuming styles.css is in a parent 'css' folder -->
+</head>
+<body>
+  <header>
+    <h1>Sports Entertainment Blog</h1>
+    <p>Exploring the history and innovation of sports entertainment</p>
+  </header>
+  <figure>
+    <img src="images/Leonardo_Phoenix_A_warm_and_vibrant_scene_of_a_grandfather_wit_1.jpg" alt="Super Bowl halftime performance" class="blog-image">
+  </figure>
+  <main>
+    <article class="blog-post">
+      <h2>The Ultimate Super Bowl Experience: A Complete Guide to America's Biggest Sporting Spectacle</h2>
+      
+      <h3>Pre-Game Traditions</h3>
+      <h4>The Ultimate Spread</h4>
+      <ul>
+        <li>Mountains of wings (Americans consume over 1.4 billion on Super Bowl Sunday)</li>
+        <li>Pizza deliveries reach their yearly peak</li>
+        <li>Guacamole becomes liquid gold (about 80 million pounds consumed)</li>
+        <li>The sacred seven-layer dip makes its annual appearance</li>
+      </ul>
+      
+      <h4>The Setup Ritual</h4>
+      <ul>
+        <li>Strategic couch positioning for optimal viewing</li>
+        <li>The great debate over seat assignments</li>
+        <li>Setting up multiple screens for social media commentary</li>
+        <li>Laying out the snack stadium</li>
+      </ul>
+      
+      <h3>During the Game</h3>
+      <h4>Commercial Breaks: The Other Main Event</h4>
+      <ul>
+        <li>Entire rooms falling silent for $7 million, 30-second spots</li>
+        <li>Rating each ad's creativity and humor</li>
+        <li>Anticipating which brands will create the next viral moment</li>
+        <li>Debating which commercial deserves the unofficial "best ad" crown</li>
+      </ul>
+      
+      <h4>Halftime Show Spectacle</h4>
+      <img src="https://github.com/jen1der/sports-entertainment/blob/main/a-photo-of-the-super-bowl-halftime-show-from-the-p-lg598xzuRd2fIqRGkd5img-frDu6_KoT92bUJ7fCks39g.jpeg?raw=true" alt="Super Bowl Halftime Show">
+      <ul>
+        <li>The mass exodus to refill plates</li>
+        <li>Impromptu living room dance parties</li>
+        <li>Critiquing the performance like seasoned music producers</li>
+        <li>Comparing it to legendary shows of years past</li>
+      </ul>
+      
+      <h3>Game Day Superstitions</h3>
+      <ul>
+        <li>Lucky jerseys that haven't been washed since '85</li>
+        <li>Specific seating arrangements that "ensure" team victory</li>
+        <li>Rally caps for comeback attempts</li>
+        <li>The "don't move, it's working" freeze</li>
+      </ul>
+      
+      <h3>Party Elements</h3>
+      <h4>The Pools and Bets</h4>
+      <ul>
+        <li>Square pools for each quarter</li>
+        <li>Prop bets on everything imaginable</li>
+        <li>First touchdown predictions</li>
+        <li>National anthem length timing</li>
+        <li>Coin toss calling rights</li>
+      </ul>
+      
+      <h4>The Cast of Characters</h4>
+      <ul>
+        <li>The Statistics Guru who knows every player's history</li>
+        <li>The Commercial Critic who works in marketing</li>
+        <li>The Once-a-Year Football Fan who asks endless questions</li>
+        <li>The Chef who takes the snack spread too seriously</li>
+        <li>The Referee who argues every call</li>
+      </ul>
+      
+      <h4>Technical Traditions</h4>
+      <ul>
+        <li>Testing the TV setup hours before kickoff</li>
+        <li>The panic when the stream buffers</li>
+        <li>Backup viewing options ready</li>
+        <li>The annual struggle with surround sound settings</li>
+      </ul>
+      
+      <h3>Post-Game Rituals</h3>
+      <h4>The Aftermath</h4>
+      <ul>
+        <li>Monday morning quarterbacks</li>
+        <li>Next-day food coma</li>
+        <li>The great cleanup operation</li>
+        <li>Social media deep dives into memes and highlights</li>
+        <li>Planning for "next year"</li>
+      </ul>
+      
+      <h4>The Legacy Elements</h4>
+      <ul>
+        <li>Saving commemorative cups and plates</li>
+        <li>Updating personal record books of parties hosted</li>
+        <li>Collecting betting pool winnings</li>
+        <li>Archiving photos of the epic spread</li>
+        <li>Adding to the running list of "remember when" moments</li>
+      </ul>
+      
+      <h3>The New Standards</h3>
+      <h4>Social Media Integration</h4>
+      <ul>
+        <figure>
+          <img src="Jen1der/Sports-Enterainment-/images/Leonardo_Phoenix_Create_a_dynamic_graphic_showcasing_cuttinged_3.jpg" alt="Super Bowl halftime performance" class="blog-image">
+          <figcaption>Emerging technologies</figcaption>
+        </figure>
+        <li>Live-tweeting every big play</li>
+        <li>Instagram stories of the party spread</li>
+        <li>TikTok challenges during commercial breaks</li>
+        <li>Real-time meme creation</li>
+        <li>Second-screen experience with stats and commentary</li>
+      </ul>
+      
+      <h4>Modern Twists</h4>
+      <ul>
+        <li>Virtual watch parties for distant friends</li>
+        <li>Plant-based alternatives to traditional snacks</li>
+        <li>Fantasy football final celebrations</li>
+        <li>International viewing parties</li>
+        <li>Sustainable party supplies</li>
+      </ul>
+      
+      <p>Whether you're a die-hard fan or just there for the commercials and camaraderie, these Super Bowl traditions create an annual cultural phenomenon that transcends sports. It's not just a game – it's an American holiday that brings together millions in shared experience, celebration, and occasional heartbreak.</p>
+      <figure>
+        <img src="Jen1der/Sports-Enterainment-/images/a-behind-the-scenes-perspective-of-an-american-art-IYcbj_1VS2iQ9dOAFxTI-Q-frDu6_KoT92bUJ7fCks39g.jpeg" alt="Super Bowl halftime performance" class="blog-image">
+        <figcaption>The electrifying halftime performance of the Super Bowl.</figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sports Entertainment Blog. All rights reserved.</p>
+  </footer>
+</body>
+</html>
