@@ -14,21 +14,21 @@
   
   <nav>
     <a href="#Fan-Traditions">Fan Traditions</a>
-    <a href="Innovative-Technologies#">Fan Experiences Innovations</a>
-    <a href="#Super-Bowl-specifics">Super Bowl Specifics</a>
-    <a href="#Trends-across-leagues">Trends acorss leagues</a>
-    <a href="#Brief-Doc">Summary of sporting trends</a>
+    <a href="#Innovative-Technologies">Fan Experience Innovations</a>
+    <a href="#Super-Bowl-Specifics">Super Bowl Specifics</a>
+    <a href="#Trends-Across-Leagues">Trends Across Leagues</a>
+    <a href="#Briefing-Doc">Summary of Sporting Trends</a>
   </nav>
 
   <main>
-    <section id="Fan Traditions">
+    <section id="Fan-Traditions">
       <h2>Fan Traditions</h2>
       <ul>
-        <a href="#Stadium-Concession-Trends">Stadium Concessions</a>
-        <a href="#The Dallas Cowboy Cheerleaders">Cheerldeaders</a>
-        <a href="#Super-bowl-traditions">Super Bowl Traditions</a>
-        <a href="#LasVegas-Sports-innovation">The City of Las Vegas and sport</a>
-        <a href="#Brief-Doc">Summary of sporting trends</a>
+        <li><a href="#Stadium-Concession-Trends">Stadium Concessions</a></li>
+        <li><a href="#Dallas-Cowboy-Cheerleaders">Cheerleaders</a></li>
+        <li><a href="#Super-Bowl-Traditions">Super Bowl Traditions</a></li>
+        <li><a href="#Las-Vegas-Sports-Innovation">Las Vegas and Sports</a></li>
+        <li><a href="#Briefing-Doc">Summary of Sporting Trends</a></li>
       </ul>
     </section>
 
@@ -41,135 +41,23 @@
       </ul>
     </section>
 
-    <section id="Super-Bowl-specifics">
-      <h2>Super Bowl specifics</h2>
+    <section id="Super-Bowl-Specifics">
+      <h2>Super Bowl Specifics</h2>
       <ul>
         <li>Microtransactions and In-App Purchases</li>
         <li>Sponsorship Opportunities</li>
       </ul>
     </section>
 
-    <section id="Trends-across-leagues">
-      <h2>Trends across leagues</h2>
+    <section id="Trends-Across-Leagues">
+      <h2>Trends Across Leagues</h2>
       <ul>
-      import React, { useState } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-
-// Generate sample data
-const generateData = () => {
-  const years = Array.from({length: 31}, (_, i) => 1994 + i);
-  const leagues = ['NBA', 'NFL', 'MLB', 'NHL'];
-  
-  return years.map(year => {
-    const baseAttendance = {
-      'NBA': 17000 + Math.random() * 2000,
-      'NFL': 65000 + Math.random() * 5000,
-      'MLB': 30000 + Math.random() * 3000,
-      'NHL': 16000 + Math.random() * 2000
-    };
-    
-    const baseHotDogs = {
-      'NBA': 800000 + Math.random() * 200000,
-      'NFL': 1500000 + Math.random() * 300000,
-      'MLB': 2000000 + Math.random() * 400000,
-      'NHL': 700000 + Math.random() * 150000
-    };
-    
-    const baseJerseys = {
-      'NBA': 2000000 + Math.random() * 500000,
-      'NFL': 3000000 + Math.random() * 700000,
-      'MLB': 1500000 + Math.random() * 400000,
-      'NHL': 1000000 + Math.random() * 300000
-    };
-    
-    return {
-      year,
-      ...leagues.reduce((acc, league) => ({
-        ...acc,
-        [`${league}Attendance`]: Math.round(baseAttendance[league]),
-        [`${league}HotDogs`]: Math.round(baseHotDogs[league]),
-        [`${league}Jerseys`]: Math.round(baseJerseys[league])
-      }), {})
-    };
-  });
-};
-
-const MetricsDashboard = () => {
-  const [data] = useState(generateData());
-  const [activeMetric, setActiveMetric] = useState('Attendance');
-  
-  const metrics = {
-    'Attendance': 'Average attendance per game',
-    'HotDogs': 'Total hot dogs sold per season',
-    'Jerseys': 'Total jerseys sold per season'
-  };
-  
-  const colors = {
-    'NBA': '#C9082A',
-    'NFL': '#013369',
-    'MLB': '#002D72',
-    'NHL': '#000000'
-  };
-
-  return (
-    <div className="w-full max-w-6xl">
-      <Card className="mb-6">
-        <CardHeader>
-          <CardTitle>Sports Leagues Metrics Dashboard (1994-2024)</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="mb-4 space-x-2">
-            {Object.entries(metrics).map(([metric, label]) => (
-              <button
-                key={metric}
-                onClick={() => setActiveMetric(metric)}
-                className={`px-4 py-2 rounded ${
-                  activeMetric === metric
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-200 text-gray-700'
-                }`}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-          
-          <div className="w-full h-[400px]">
-            <LineChart
-              width={900}
-              height={400}
-              data={data}
-              margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="year" />
-              <YAxis />
-              <Tooltip />
-              <Legend />
-              {['NBA', 'NFL', 'MLB', 'NHL'].map(league => (
-                <Line
-                  key={league}
-                  type="monotone"
-                  dataKey={`${league}${activeMetric}`}
-                  name={league}
-                  stroke={colors[league]}
-                  strokeWidth={2}
-                />
-              ))}
-            </LineChart>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
-};
-
-export default MetricsDashboard;
+        <li>Growing audience diversity</li>
+        <li>Tech integrations for fan engagement</li>
       </ul>
     </section>
 
-    <section id="Biefing-Doc">
+    <section id="Briefing-Doc">
       <h2>Brief Summary</h2>
       <ul>
         <li>Predictions for the next decade</li>
@@ -179,7 +67,7 @@ export default MetricsDashboard;
   </main>
 
   <footer>
-    <p> 2024 Sports Entertainment with Jen Wunder </p>
+    <p>© 2024 Sports Entertainment with Jen Wunder</p>
   </footer>
 </body>
 </html>
