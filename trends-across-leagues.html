@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trends Across Leagues - Sports Entertainment Blog</title>
+  <link rel="stylesheet" href="../css/styles.css"> <!-- Adjust path to match your CSS file location -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include if using Chart.js -->
+</head>
+<body>
+  <header>
+    <h1>Trends Across Leagues</h1>
+    <p>Analyzing attendance and engagement trends in major sports leagues.</p>
+    <nav>
+      <a href="index.html" class="button">Home</a>
+      <a href="fan-traditions.html" class="button">Fan Traditions</a>
+      <a href="fan-innovation.html" class="button">Fan Innovation</a>
+      <a href="super-bowl.html" class="button">Super Bowl</a>
+      <a href="trends-across-leagues.html" class="button">Trends Across Leagues</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Interactive Graphs</h2>
+      <div class="chart-container" style="position: relative; height:400px; width:90%; margin: auto;">
+        <canvas id="attendanceChart"></canvas>
+      </div>
+    </section>
+
+    <section>
+      <h2>Data Tables</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>NBA Attendance</th>
+            <th>NFL Attendance</th>
+            <th>MLB Attendance</th>
+            <th>NHL Attendance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2022</td>
+            <td>17,500</td>
+            <td>68,400</td>
+            <td>30,200</td>
+            <td>16,800</td>
+          </tr>
+          <tr>
+            <td>2023</td>
+            <td>18,000</td>
+            <td>70,000</td>
+            <td>31,000</td>
+            <td>17,200</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Sports Entertainment Blog. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Example Chart.js setup
+    const ctx = document.getElementById('attendanceChart').getContext('2d');
+    const attendanceChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['2022', '2023', '2024'],
+        datasets: [
+          {
+            label: 'NBA Attendance',
+            data: [17500, 18000, 18500],
+            borderColor: '#C9082A',
+            borderWidth: 2
+          },
+          {
+            label: 'NFL Attendance',
+            data: [68400, 70000, 71500],
+            borderColor: '#013369',
+            borderWidth: 2
+          },
+          {
+            label: 'MLB Attendance',
+            data: [30200, 31000, 32000],
+            borderColor: '#002D72',
+            borderWidth: 2
+          },
+          {
+            label: 'NHL Attendance',
+            data: [16800, 17200, 17600],
+            borderColor: '#000000',
+            borderWidth: 2
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
