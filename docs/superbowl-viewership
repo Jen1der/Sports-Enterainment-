@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Super Bowl Viewership Evolution</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .chart-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .annotation {
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Super Bowl Viewership Evolution</h1>
+    <div class="chart-container">
+        <canvas id="superBowlViewershipChart"></canvas>
+    </div>
+    <div class="annotation">
+        Key Historical Moments:
+        • 1984: First iconic Apple Mac ad
+        • 1993: Michael Jackson's legendary halftime show
+        • Early 2000s: Rise of viral Super Bowl commercials
+        • 2010s: Social media amplifies ad and halftime show impact
+    </div>
+
+    <script>
+        const ctx = document.getElementById('superBowlViewershipChart').getContext('2d');
+        
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [
+                    '1980', '1985', '1990', '1995', 
+                    '2000', '2005', '2010', '2015', 
+                    '2020', '2022'
+                ],
+                datasets: [{
+                    label: 'Super Bowl Viewership (Millions)',
+                    data: [
+                        85, 90, 105, 135, 
+                        140, 160, 185, 210, 
+                        96, 112  // Note the dip in 2020-2022
+                    ],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Super Bowl Viewership Trends',
+                        font: {
+                            size: 16
+                        }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                return `Viewers: ${context.formattedValue} million`;
+                            }
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            adEra: {
+                                type: 'line',
+                                xMin: '1984',
+                                xMax: '1984',
+                                borderColor: 'red',
+                                borderWidth: 2,
+                                label: {
+                                    content: 'Iconic Apple Ad Era Begins',
+                                    display: true
+                                }
+                            },
+                            halftimeShow: {
+                                type: 'line',
+                                xMin: '1993',
+                                xMax: '1993',
+                                borderColor: 'blue',
+                                borderWidth: 2,
+                                label: {
+                                    content: 'Michael Jackson Halftime Show',
+                                    display: true
+                                }
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Number of Viewers (Millions)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
