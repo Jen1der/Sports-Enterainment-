@@ -6,6 +6,35 @@ body {
   margin: 0;
   padding: 0;
 }
+header {
+  text-align: center; /* This will center the text in the header */
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #008080; /* Teal */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #004d40; /* Dark Green */
+}
 
 /* Container Styles */
 .container {
