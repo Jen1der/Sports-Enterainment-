@@ -27,7 +27,118 @@
         <canvas id="attendanceChart"></canvas>
       </div>
     </section>
-
+    import React, { useState } from 'react';
+    import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+    import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+    
+    // Generate sample data
+    const generateData = () => {
+      const years = Array.from({length: 31}, (_, i) => 1994 + i);
+      const leagues = ['NBA', 'NFL', 'MLB', 'NHL'];
+      
+      return years.map(year => {
+        const baseAttendance = {
+          'NBA': 17000 + Math.random() * 2000,
+          'NFL': 65000 + Math.random() * 5000,
+          'MLB': 30000 + Math.random() * 3000,
+          'NHL': 16000 + Math.random() * 2000
+        };
+        
+        const baseHotDogs = {
+          'NBA': 800000 + Math.random() * 200000,
+          'NFL': 1500000 + Math.random() * 300000,
+          'MLB': 2000000 + Math.random() * 400000,
+          'NHL': 700000 + Math.random() * 150000
+        };
+        
+        const baseJerseys = {
+          'NBA': 2000000 + Math.random() * 500000,
+          'NFL': 3000000 + Math.random() * 700000,
+          'MLB': 1500000 + Math.random() * 400000,
+          'NHL': 1000000 + Math.random() * 300000
+        };
+        
+        return {
+          year,
+          ...leagues.reduce((acc, league) => ({
+            ...acc,
+            [`${league}Attendance`]: Math.round(baseAttendance[league]),
+            [`${league}HotDogs`]: Math.round(baseHotDogs[league]),
+            [`${league}Jerseys`]: Math.round(baseJerseys[league])
+          }), {})
+        };
+      });
+    };
+    
+    const MetricsDashboard = () => {
+      const [data] = useState(generateData());
+      const [activeMetric, setActiveMetric] = useState('Attendance');
+      
+      const metrics = {
+        'Attendance': 'Average attendance per game',
+        'HotDogs': 'Total hot dogs sold per season',
+        'Jerseys': 'Total jerseys sold per season'
+      };
+      
+      const colors = {
+        'NBA': '#C9082A',
+        'NFL': '#013369',
+        'MLB': '#002D72',
+        'NHL': '#000000'
+      };
+    
+      return (
+        <div className="w-full max-w-6xl">
+          <Card className="mb-6">
+            <CardHeader>
+              <CardTitle>Sports Leagues Metrics Dashboard (1994-2024)</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="mb-4 space-x-2">
+                {Object.entries(metrics).map(([metric, label]) => (
+                  <button
+                    key={metric}
+                    onClick={() => setActiveMetric(metric)}
+                    className={`px-4 py-2 rounded ${
+                      activeMetric === metric
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-gray-200 text-gray-700'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              
+              <div className="w-full h-[400px]">
+                <LineChart
+                  width={900}
+                  height={400}
+                  data={data}
+                  margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="year" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  {['NBA', 'NFL', 'MLB', 'NHL'].map(league => (
+                    <Line
+                      key={league}
+                      type="monotone"
+                      dataKey={`${league}${activeMetric}`}
+                      name={league}
+                      stroke={colors[league]}
+                      strokeWidth={2}
+                    />
+                  ))}
+                </LineChart>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      );
+    };
     <section>
       <h2>Data Tables</h2>
       <table class="data-table">
@@ -61,9 +172,135 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 Sports Entertainment Blog. All rights reserved.</p>
-  </footer>
+  <title>Super Bowl Viewership Evolution</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 20px;
+          background-color: #f4f4f4;
+      }
+      .chart-container {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          padding: 20px;
+      }
+      h1 {
+          text-align: center;
+          color: #333;
+      }
+      .annotation {
+          text-align: center;
+          margin-top: 15px;
+          color: #666;
+          font-size: 0.9em;
+      }
+  </style>
+</head>
+<body>
+  <h1>Super Bowl Viewership Evolution</h1>
+  <div class="chart-container">
+      <canvas id="superBowlViewershipChart"></canvas>
+  </div>
+  <div class="annotation">
+      Key Historical Moments:
+      • 1984: First iconic Apple Mac ad
+      • 1993: Michael Jackson's legendary halftime show
+      • Early 2000s: Rise of viral Super Bowl commercials
+      • 2010s: Social media amplifies ad and halftime show impact
+  </div>
+
+  <script>
+      const ctx = document.getElementById('superBowlViewershipChart').getContext('2d');
+      
+      const chart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: [
+                  '1980', '1985', '1990', '1995', 
+                  '2000', '2005', '2010', '2015', 
+                  '2020', '2022'
+              ],
+              datasets: [{
+                  label: 'Super Bowl Viewership (Millions)',
+                  data: [
+                      85, 90, 105, 135, 
+                      140, 160, 185, 210, 
+                      96, 112  // Note the dip in 2020-2022
+                  ],
+                  borderColor: 'rgba(75, 192, 192, 1)',
+                  backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                  tension: 0.4,
+                  fill: true
+              }]
+          },
+          options: {
+              responsive: true,
+              plugins: {
+                  title: {
+                      display: true,
+                      text: 'Super Bowl Viewership Trends',
+                      font: {
+                          size: 16
+                      }
+                  },
+                  tooltip: {
+                      mode: 'index',
+                      intersect: false,
+                      callbacks: {
+                          label: function(context) {
+                              return `Viewers: ${context.formattedValue} million`;
+                          }
+                      }
+                  },
+                  annotation: {
+                      annotations: {
+                          adEra: {
+                              type: 'line',
+                              xMin: '1984',
+                              xMax: '1984',
+                              borderColor: 'red',
+                              borderWidth: 2,
+                              label: {
+                                  content: 'Iconic Apple Ad Era Begins',
+                                  display: true
+                              }
+                          },
+                          halftimeShow: {
+                              type: 'line',
+                              xMin: '1993',
+                              xMax: '1993',
+                              borderColor: 'blue',
+                              borderWidth: 2,
+                              label: {
+                                  content: 'Michael Jackson Halftime Show',
+                                  display: true
+                              }
+                          }
+                      }
+                  }
+              },
+              scales: {
+                  y: {
+                      beginAtZero: false,
+                      title: {
+                          display: true,
+                          text: 'Number of Viewers (Millions)'
+                      }
+                  },
+                  x: {
+                      title: {
+                          display: true,
+                          text: 'Year'
+                      }
+                  }
+              }
+          }
+      });
+  </script>
 
   <script>
     // Example Chart.js setup
@@ -114,5 +351,8 @@
       }
     });
   </script>
+    <footer>
+      <p>&copy; 2024 Sports Entertainment Blog. All rights reserved.</p>
+    </footer>
 </body>
 </html>
