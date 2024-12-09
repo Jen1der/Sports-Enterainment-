@@ -5,9 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fan Traditions - Sports Entertainment Blog</title>
   <link rel="stylesheet" href="styles.css"> <!-- Adjust path to match your CSS file location -->
-  header {
-    text-align: center; /* This will center the text in the header */
-  }
+  <style>
+    /* Inline CSS for Button Navigation (Optional: Move to style.css) */
+    header {
+      text-align: center; /* This will center the text in the header */
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+    }
+
+    .nav-button {
+      padding: 10px 20px;
+      background-color: #008080; /* Teal */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .nav-button:hover {
+      background-color: #004d40; /* Dark Green */
+    }
+  </style>
 </head>
 <body>
   <header>
