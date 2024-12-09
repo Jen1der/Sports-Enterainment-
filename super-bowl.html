@@ -3,46 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Super Bowl Specifics - Sports Entertainment Blog</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Adjust path to match your CSS file location -->
-  header {
-    text-align: center; /* This will center the text in the header */
-  }
+  <title>Super Bowl Specifics</title>
+  <link rel="stylesheet" href="../css/styles.css"> <!-- Update path to match structure -->
 </head>
 <body>
   <header>
     <h1>Super Bowl Specifics</h1>
-    <p>Explore insights, history, and trends from the Super Bowl.</p>
-    <nav>
-      <a href="index.html" class="button">Home</a>
-      <a href="fan-traditions.html" class="button">Fan Traditions</a>
-      <a href="fan-innovation.html" class="button">Fan Innovation</a>
-      <a href="super-bowl.html" class="button">Super Bowl</a>
-      <a href="trends.html" class="button">Trends</a>
-    </nav>
+    <p>Diving into the statistics and trends surrounding the Super Bowl.</p>
   </header>
 
+  <nav class="navigation">
+    <button><a href="../index.html">Home</a></button>
+    <button><a href="fan-traditions.html">Fan Traditions</a></button>
+    <button><a href="fan-innovation.html">Fan Innovations</a></button>
+    <button><a href="super-bowl.html">Super Bowl Specifics</a></button>
+    <button><a href="trends-across-leagues.html">Trends Across Leagues</a></button>
+  </nav>
+
   <main>
-    <section class="article-list">
-      <h2>Articles on Super Bowl Specifics</h2>
+    <section>
+      <h2>Super Bowl Statistics</h2>
+      <p>Explore detailed charts showcasing Super Bowl trends over the years.</p>
+    </section>
+
+    <section>
+      <h2>Super Bowl Performance Chart</h2>
+      <p>The chart below highlights team performances, wins, and more.</p>
+      <!-- Chart Implementation -->
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Winning Team</th>
+            <th>Score</th>
+            <th>Losing Team</th>
+            <th>Venue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023</td>
+            <td>Kansas City Chiefs</td>
+            <td>38-35</td>
+            <td>Philadelphia Eagles</td>
+            <td>State Farm Stadium</td>
+          </tr>
+          <tr>
+            <td>2022</td>
+            <td>Los Angeles Rams</td>
+            <td>23-20</td>
+            <td>Cincinnati Bengals</td>
+            <td>SoFi Stadium</td>
+          </tr>
+          <!-- Add more rows as needed -->
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Additional Resources</h2>
+      <p>For more information, view the detailed documentation below:</p>
       <ul>
-        <li>
-            <iframe src="docs/superbowl-viewership" width="100%" height="600px" style="border: none;"></iframe>
-          </a>
-        </li>
-        <li>
-            <iframe src="docs/Super-bowl-traditions" width="100%" height="600px" style="border: none;"></iframe>
-          </a>
-        </li>
-        <li>
-            <iframe src="docs/Impact-of-SB-Ads.html" width="100%" height="600px" style="border: none;"></iframe>
-          </a>
-        </li>
-        <li>
-          <a href="docs/super-bowl-fan-experiences.pdf" target="_blank">
-            Super Bowl Fan Experiences: A Closer Look (PDF)
-          </a>
-        </li>
+        <li><a href="../docs/super-bowl-trends.pdf" target="_blank">Super Bowl Trends (PDF)</a></li>
+        <li><a href="../docs/team-performance-analysis.html" target="_blank">Team Performance Analysis</a></li>
+        <!-- Add more documents as needed -->
       </ul>
     </section>
   </main>
