@@ -167,6 +167,21 @@ nav .button:hover {
   border: none; /* Remove default iframe border */
   border-radius: 8px; /* Smooth corners for iframe */
 }
+.document-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.document-section h2 {
+  color: #0056b3; /* Match your heading style */
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .iframe-container iframe {
+    height: 400px; /* Reduce height for smaller screens */
+  }
+}
 /* Footer (Optional) */
 footer {
   background-color: #004d40;
