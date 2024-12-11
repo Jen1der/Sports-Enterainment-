@@ -1,4 +1,14 @@
-Sports & Entertainment: A Deep Dive into Fan Engagement and the Future of the Industry
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+<title> Sports & Entertainment: A Deep Dive into Fan Engagement and the Future of the Industry </title>
+</head>
+<body>
+  <div class="container">
+<p>
 This briefing document analyzes several sources to explore the evolving landscape of sports and entertainment, focusing on key themes such as:
 The Changing Nature of Fandom: How are fan expectations evolving, and what challenges do these shifts present for teams and venues?
 Leveraging Data and Technology: How can data be used to understand fans and enhance their experience? What role does technology play in revolutionizing engagement?
@@ -43,3 +53,7 @@ Halftime Spectacle: Michael Jackson's 1993 performance transformed the halftime 
 Conclusion: Embracing the Future While Honoring the Past
 The sports and entertainment landscape is in a state of constant evolution. As technology advances and fan expectations shift, teams, venues, and leagues must adapt to stay relevant. The key to future success lies in understanding the fluid fan, embracing data-driven decision-making, and strategically leveraging technology.
 However, the essence of sports lies in its ability to connect people through shared experiences, traditions, and a love of the game. As the industry evolves, it is crucial to remember the power of storytelling, the importance of community, and the value of rituals that have bound fans together for generations.
+    </p>
+  </div>
+</body>
+</html>
