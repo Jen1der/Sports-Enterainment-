@@ -152,6 +152,22 @@ nav .button:hover {
 .styled-table th {
   background-color: #f4f4f4;
 }
+.iframe-container {
+  max-width: 90%; /* Adjust to fit the page width */
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ffffff; /* Match your page background */
+  border: 2px solid #008080; /* Match your theme color */
+  border-radius: 10px; /* Smooth corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.iframe-container iframe {
+  width: 100%; /* Make iframe responsive */
+  height: 600px; /* Adjust height as needed */
+  border: none; /* Remove default iframe border */
+  border-radius: 8px; /* Smooth corners for iframe */
+}
 /* Footer (Optional) */
 footer {
   background-color: #004d40;
