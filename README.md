@@ -2,15 +2,6 @@
 This is my respitory on sports entertainment. I will be compiling ways AI access can help with Super Bowl gameday entertainement and fan engagement. 
 I will be using Claude, ChatGPT, Archives, Youtube for different aspects of sports entertainment as well showing my skills in creating my vision with AI to show the evolution of traditions, trends and culture around sporting events.
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
 ---
 
 ## View the Index Page
@@ -55,3 +46,4 @@ cd project-name
 # Install dependencies
 pip install -r requirements.txt
 
+Created and utilized by Jen Wunder with the help of AI. 
