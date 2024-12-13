@@ -19,71 +19,170 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <div class="container">
-      <h2>Trends Across Leagues</h2>
-      <p>Explore trends in viewership, attendance, and engagement across major sports leagues with the chart below.</p>
-
-      <!-- Chart Section -->
-      <div style="width: 80%; margin: 0 auto;">
-        <canvas id="leagueTrendsChart"></canvas> <!-- Chart Canvas -->
-      </div>
-    </div>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Sports Entertainment Blog. All rights reserved.</p>
-  </footer>
-
-  <!-- Chart.js Script -->
-  <script>
-    // Sample data for trends across leagues
-    const data = {
-      labels: ['NFL', 'NBA', 'MLB', 'NHL', 'MLS'], // League names
-      datasets: [{
-        label: 'Average Viewership (in millions)',
-        data: [17.1, 7.4, 3.7, 2.4, 1.2], // Sample data points
-        backgroundColor: [
-          'rgba(255, 99, 132, 0.5)',
-          'rgba(54, 162, 235, 0.5)',
-          'rgba(255, 206, 86, 0.5)',
-          'rgba(75, 192, 192, 0.5)',
-          'rgba(153, 102, 255, 0.5)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)'
-        ],
-        borderWidth: 1
-      }]
-    };
-
-    // Chart configuration
-    const config = {
-      type: 'bar', // Type of chart (bar, line, pie, etc.)
-      data: data,
-      options: {
-        responsive: true,
-        plugins: {
-          legend: {
-            position: 'top',
-          },
-          title: {
-            display: true,
-            text: 'Trends Across Leagues'
-          }
+    <meta charset="UTF-8">
+    <title>Trends Across Leagues</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
         }
-      }
-    };
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .chart-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trends Across Leagues</h1>
 
-    // Render the chart
-    const ctx = document.getElementById('leagueTrendsChart').getContext('2d');
-    new Chart(ctx, config);
-  </script>
+    <!-- Chart 1: Fan Favorite Aspects -->
+    <div class="chart-container">
+        <canvas id="fanFavoritesChart"></canvas>
+    </div>
+
+    <!-- Chart 2: Super Bowl Viewership Evolution -->
+    <div class="chart-container">
+        <canvas id="superBowlViewershipChart"></canvas>
+    </div>
+
+    <!-- Chart 3: League Metrics Dashboard -->
+    <div class="chart-container">
+        <canvas id="leagueMetricsChart"></canvas>
+    </div>
+
+    <script>
+        // Fan Favorite Aspects Chart
+        const fanFavoritesCtx = document.getElementById('fanFavoritesChart').getContext('2d');
+        new Chart(fanFavoritesCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Live Performance', 'Crowd Energy', 'Unique Atmosphere', 'Meeting Other Fans', 'Merchandise', 'Food & Drinks'],
+                datasets: [{
+                    label: 'Popularity of Live Event Aspects',
+                    data: [85, 75, 70, 60, 45, 40],
+                    backgroundColor: ['rgba(255, 99, 132, 0.7)', 'rgba(54, 162, 235, 0.7)', 'rgba(255, 206, 86, 0.7)', 'rgba(75, 192, 192, 0.7)', 'rgba(153, 102, 255, 0.7)', 'rgba(255, 159, 64, 0.7)'],
+                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)', 'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        title: {
+                            display: true,
+                            text: 'Popularity (%)'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Super Bowl Viewership Chart
+        const superBowlCtx = document.getElementById('superBowlViewershipChart').getContext('2d');
+        new Chart(superBowlCtx, {
+            type: 'line',
+            data: {
+                labels: ['1980', '1985', '1990', '1995', '2000', '2005', '2010', '2015', '2020', '2022'],
+                datasets: [{
+                    label: 'Super Bowl Viewership (Millions)',
+                    data: [85, 90, 105, 135, 140, 160, 185, 210, 96, 112],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: false,
+                        title: {
+                            display: true,
+                            text: 'Number of Viewers (Millions)'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                }
+            }
+        });
+
+        // League Metrics Dashboard Chart
+        const leagueMetricsCtx = document.getElementById('leagueMetricsChart').getContext('2d');
+        new Chart(leagueMetricsCtx, {
+            type: 'line',
+            data: {
+                labels: Array.from({ length: 31 }, (_, i) => 1994 + i), // Years 1994 to 2024
+                datasets: [
+                    {
+                        label: 'NBA Attendance',
+                        data: Array.from({ length: 31 }, () => 17000 + Math.random() * 2000),
+                        borderColor: '#C9082A',
+                        backgroundColor: 'rgba(201, 8, 42, 0.2)',
+                        fill: true
+                    },
+                    {
+                        label: 'NFL Attendance',
+                        data: Array.from({ length: 31 }, () => 65000 + Math.random() * 5000),
+                        borderColor: '#013369',
+                        backgroundColor: 'rgba(1, 51, 105, 0.2)',
+                        fill: true
+                    },
+                    {
+                        label: 'MLB Attendance',
+                        data: Array.from({ length: 31 }, () => 30000 + Math.random() * 3000),
+                        borderColor: '#002D72',
+                        backgroundColor: 'rgba(0, 45, 114, 0.2)',
+                        fill: true
+                    },
+                    {
+                        label: 'NHL Attendance',
+                        data: Array.from({ length: 31 }, () => 16000 + Math.random() * 2000),
+                        borderColor: '#000000',
+                        backgroundColor: 'rgba(0, 0, 0, 0.2)',
+                        fill: true
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Average Attendance per Game'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
